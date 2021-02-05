@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Class1.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentAssertions" Version="5.10.3" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.3.0" />
+      <PackageReference Include="NUnit" Version="3.12.0" />
+      <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+      <PackageReference Include="SpecFlow" Version="3.3.16-beta" />
+      <PackageReference Include="SpecFlow.NUnit" Version="3.3.16-beta" />
+      <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.3.16-beta" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="RegisterTime.feature" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="RegisterProject.feature" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\factor10.TimeRegistration.AntiCorruptionLayer\factor10.TimeRegistration.AntiCorruptionLayer.csproj" />
+      <ProjectReference Include="..\factor10.TimeRegistration.DomainModel\factor10.TimeRegistration.DomainModel.csproj" />
+      <ProjectReference Include="..\factor10.TimeRegistration.Repositories\factor10.TimeRegistration.Repositories.csproj" />
+    </ItemGroup>
+
+</Project>

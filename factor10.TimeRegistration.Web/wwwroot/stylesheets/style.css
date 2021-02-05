@@ -1,0 +1,18 @@
+.day {
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  padding-top: 0;
+}
+
+.registration {
+  padding-bottom: 0.5rem;
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-inline-start: 0;
+  margin-bottom: 0.5rem;
+}

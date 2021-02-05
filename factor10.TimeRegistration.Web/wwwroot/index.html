@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ddd❤️e2e workshop</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/water.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="add-day">
+      <h2>Register time</h2>
+      <div>
+        <label for="select-consultant">Select consultant</label>
+        <select id="select-consultant" cy="select-consultant">
+          <option value="" disabled selected>Select a consultant</option>
+        </select>
+      </div>
+      <div>
+        <label for="input-date">Date</label>
+        <input type="date" id="input-date" cy="input-date" />
+      </div>
+      <div>
+        <label for="select-project">Project</label>
+        <select id="select-project" cy="select-project">
+          <option value="" disabled selected>Select a project</option>
+        </select>
+      </div>
+      <div>
+        <label for="input-activity">Activity</label>
+        <input id="input-activity" cy="input-activity" />
+      </div>
+      <div>
+        <label for="input-duration">Duration</label>
+        <input id="input-duration" cy="input-duration" />
+      </div>
+      <div>
+        <button id="button-add-registration">Add registration</button>
+      </div>
+      <code id="warning" style="display: none"></code>
+    </div>
+
+    <hr />
+
+    <h2>Registrations</h2>
+    <div id="registrations"></div>
+  </body>
+  <script src="scripts/index.js"></script>
+</html>
